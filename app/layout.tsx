@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import QueryProvider from "./queryPorvider";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const jost = localFont({
+  src: [
+    { path: "./fonts/Jost100Hairline.otf", weight: "100" },
+    { path: "./fonts/Jost200Thin.otf", weight: "200" },
+    { path: "./fonts/Jost300Light.otf", weight: "300" },
+    { path: "./fonts/Jost400Book.otf", weight: "400" },
+    { path: "./fonts/Jost500Medium.otf", weight: "500" },
+    { path: "./fonts/Jost600Semi.otf", weight: "600" },
+    { path: "./fonts/Jost700Bold.otf", weight: "700" },
+    { path: "./fonts/Jost800Heavy.otf", weight: "800" },
+    { path: "./fonts/Jost900Black.otf", weight: "900" },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -24,11 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${jost.className} antialiased flex flex-col items-center overflow-x-hidden`}
       >
-        {children}
+        <QueryProvider>{children}</QueryProvider>
       </body>
     </html>
   );
