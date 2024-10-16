@@ -44,7 +44,7 @@ export default function Banner() {
       className="hidden w-full md:block"
       autoHeight={true}
     >
-      {data.map((banner) => {
+      {data.map((banner: any) => {
         return (
           <SwiperSlide key={banner.id} className="bg-black">
             <Image
