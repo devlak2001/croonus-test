@@ -16,8 +16,8 @@ const getRecommended = async () => {
   );
 };
 
-const ImageWithFallback = ({ fallback, alt, src, ...props }) => {
-  const [error, setError] = useState(null);
+const ImageWithFallback = ({ fallback, alt, src, ...props }: any) => {
+  const [error, setError] = useState<any>(null);
 
   useEffect(() => {
     setError(null);
