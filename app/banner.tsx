@@ -37,12 +37,13 @@ export default function Banner() {
       effect="fade"
       loop={true}
       centeredSlides={true}
-      autoplay={{ delay: 5000, disableOnInteraction: false }}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
       modules={[EffectFade, Autoplay]}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
       className="hidden w-full md:block"
       autoHeight={true}
+      allowTouchMove={false}
     >
       {data.map((banner: any) => {
         return (
