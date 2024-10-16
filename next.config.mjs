@@ -6,12 +6,12 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "http",
+        protocol: "https",
         hostname: "api.staging.croonus.com",
         pathname: "/croonus-uploads/products_gallery/file/**",
       },
       {
-        protocol: "http",
+        protocol: "https",
         hostname: "api.staging.croonus.com",
         pathname: "/croonus-uploads/b2c/banners/**", // Add this line for banners
       },
