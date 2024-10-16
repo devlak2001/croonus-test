@@ -13,7 +13,7 @@ export default function Instagram() {
   const [images] = useState([img1, img2, img3, img1, img2, img3]);
   return (
     <>
-      <div className="flex flex-col-reverse items-start lg:items-end lg:flex-row w-full relative mb-32 pl-6 sm:pl-9 min-[1520px]:pl-0">
+      <div className="flex flex-col-reverse items-start lg:items-end lg:flex-row w-full relative mb-28 pl-6 sm:pl-9 min-[1540px]:pl-0">
         <ScrollContainer className="flex w-full scrollbar-thumb-custom scrollbar-track-custom-light overflow-x-scroll pb-7 gap-6 scrollbar-thin scrollbar-thumb-[#A6A998] scrollbar-track-[#F4F4F4] scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
           {images.map((image, key) => (
             <Image

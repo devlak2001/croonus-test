@@ -51,14 +51,14 @@ export default function Featured() {
   return (
     <>
       <div className="w-full flex flex-col md:flex-row items-center mb-36">
-        <div className="flex flex-col mb-4 md:mb-0 items-center md:items-start md:mr-20 shrink-0 md:ml-9">
+        <div className="flex flex-col mb-8 md:mb-0 items-center md:items-start md:mr-20 shrink-0 md:ml-9">
           <h2 className="text-[42px] font-bold">NEW IN</h2>
           <p className="font-medium text-xl">Explore new collection</p>
           <a href="" className="border-2 border-black text-sm px-3 py-2 mt-5">
             <span className="mt-0.5 block">SEE ALL PRODUCTS</span>
           </a>
         </div>
-        <ScrollContainer className="flex w-full scrollbar-thumb-custom scrollbar-track-custom-light overflow-x-scroll pb-8 px-3 gap-10 scrollbar-thin scrollbar-thumb-[#A6A998] scrollbar-track-[#F4F4F4] scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+        <ScrollContainer className="ml-6 md:ml-0 flex w-full scrollbar-thumb-custom scrollbar-track-custom-light overflow-x-scroll pb-8 px-3 gap-10 scrollbar-thin scrollbar-thumb-[#A6A998] scrollbar-track-[#F4F4F4] scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
           {data.items.map((product: Product) => {
             return (
               <a

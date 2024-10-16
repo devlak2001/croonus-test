@@ -13,7 +13,8 @@ export default function Navigation() {
   return (
     <>
       <nav className="max-w-[1520px] h-24 gap-12 relative w-full flex items-center px-4 sm:px-6 justify-between min-[1320px]:justify-center">
-        <div className="flex items-center lg:hidden">
+        <div className="absolute left-0 top-0 w-full h-full z-20 bg-white lg:hidden"></div>
+        <div className="flex items-center relative z-30 lg:hidden">
           <div className="mr-2">
             <button
               className="relative group"
@@ -63,9 +64,11 @@ export default function Navigation() {
         </div>
 
         <div
-          className={`flex flex-col lg:flex-row pb-4 transition-transform ${
-            navOpen ? "translate-x-0" : "translate-x-full"
-          } lg:pb-0 z-10 absolute lg:static left-0 w-full lg:w-auto lg:translate-x-0 top-24 bg-white items-center lg:h-full gap-6 lg:gap-12`}
+          className={`flex flex-col lg:flex-row py-6 transition-all duration-300 ${
+            navOpen
+              ? "translate-y-0 opacity-100 shadow-2xl pointer-events-auto"
+              : "-translate-y-full opacity-0 shadow-none pointer-events-none"
+          } lg:pb-0 lg:shadow-none z-10 absolute lg:opacity-100 lg:static lg:pointer-events-auto left-0 w-full lg:w-auto lg:py-0 lg:translate-y-0 top-24 bg-white items-center lg:h-full gap-6 lg:gap-12`}
         >
           <a href="">NEW IN</a>
           <a href="">INSPO</a>
@@ -78,7 +81,7 @@ export default function Navigation() {
           <a href="">OUTLET</a>
           <a href="">ABOUT</a>
         </div>
-        <div className="lg:absolute shrink-0 right-0 flex items-center lg:right-6 min-[1520px]:right-0">
+        <div className="lg:absolute shrink-0 right-0 z-30 flex items-center lg:right-6 min-[1540px]:right-0">
           <a href="" className=" mr-8 md:mr-12">
             <Image src={searchIcon} alt="search icon" className="h-6 w-auto" />
           </a>
