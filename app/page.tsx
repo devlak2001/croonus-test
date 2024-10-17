@@ -16,11 +16,11 @@ export default function Home() {
     <>
       <div className="bg-black flex w-full justify-center h-5 relative z-30">
         <div className="text-white max-w-[1520px] w-full pl-8 flex items-center text-xs">
-          <a href="" className="mt-0.5">
+          <a href="" className="mt-0.5 hover:underline">
             REGIONAL SETTINGS
           </a>
           <div className="h-3 bg-white w-px mx-5"></div>
-          <a href="" className="mt-0.5">
+          <a href="" className="mt-0.5 hover:underline">
             LOGIN & REGISTER
           </a>
         </div>
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="w-full flex">
           <div className="flex flex-col items-end pl-10 mb-7">
             <h3 className="text-xl">SHOP BY CATEGORY</h3>
-            <a href="" className="text-[#A57462]">
+            <a href="" className="text-[#A57462] hover:underline">
               VIEW ALL
             </a>
           </div>
@@ -65,7 +65,10 @@ export default function Home() {
               STYLE AND MIX.
             </h2>
             <span className="font-medium text-xl mt-2">Ringz&Thingz Brand</span>
-            <a href="" className="border-2 border-black text-sm px-7 py-2 mt-5">
+            <a
+              href=""
+              className="border-2 border-black text-sm px-7 py-2 mt-5 transition-colors hover:bg-black hover:text-white"
+            >
               <span className="mt-0.5 block">READ MORE</span>
             </a>
           </div>
@@ -91,7 +94,10 @@ export default function Home() {
               Get the latest news from the Ringz&Tingz Online Store regarding
               new products, exclusive specials, lifestyle and fashion trends.
             </p>
-            <a href="" className="border-2 border-black text-sm px-5 py-2 mt-5">
+            <a
+              href=""
+              className="border-2 border-black text-sm px-5 py-2 mt-5 transition-colors hover:bg-black hover:text-white"
+            >
               <span className="mt-0.5 block">SUBSCRIBE NOW</span>
             </a>
           </div>

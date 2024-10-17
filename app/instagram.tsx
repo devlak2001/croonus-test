@@ -37,7 +37,10 @@ export default function Instagram() {
             <br />
             Profile: @ringz&tingz
           </span>
-          <a href="" className="border-2 border-black text-sm px-12 py-2 mt-5">
+          <a
+            href=""
+            className="border-2 border-black text-sm px-12 py-2 mt-5 transition-colors hover:bg-black hover:text-white"
+          >
             <span className="mt-0.5 block">FOLLOW</span>
           </a>
         </div>

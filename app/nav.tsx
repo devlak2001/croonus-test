@@ -12,7 +12,7 @@ export default function Navigation() {
   const [navOpen, setNavOpen] = useState(false);
   return (
     <>
-      <nav className="max-w-[1520px] h-24 gap-12 relative w-full flex items-center px-4 sm:px-6 justify-between min-[1320px]:justify-center">
+      <nav className="max-w-[1520px] h-24 gap-12 relative w-full flex items-center px-4 sm:px-6 justify-between xl:justify-center">
         <div className="absolute left-0 top-0 w-full h-full z-20 bg-white lg:hidden"></div>
         <div className="flex items-center relative z-30 lg:hidden">
           <div className="mr-2">
@@ -70,16 +70,26 @@ export default function Navigation() {
               : "-translate-y-full opacity-0 shadow-none pointer-events-none"
           } lg:pb-0 lg:shadow-none z-10 absolute lg:opacity-100 lg:static lg:pointer-events-auto left-0 w-full lg:w-auto lg:py-0 lg:translate-y-0 top-24 bg-white items-center lg:h-full gap-6 lg:gap-12`}
         >
-          <a href="">NEW IN</a>
-          <a href="">INSPO</a>
-          <a href="">SHOP</a>
+          <a href="" className="hover:underline">
+            NEW IN
+          </a>
+          <a href="" className="hover:underline">
+            INSPO
+          </a>
+          <a href="" className="hover:underline">
+            SHOP
+          </a>
           <Image
             src={logo}
             alt="logo"
-            className="hidden lg:block w-auto lg:mx-6 absolute h-[72px] lg:static left-0 md:-translate-x-1/2 lg:translate-x-0"
+            className="-order-1 xl:order-none hidden lg:block w-auto xl:mx-6 absolute h-[72px] lg:static left-0 md:-translate-x-1/2 lg:translate-x-0"
           />
-          <a href="">OUTLET</a>
-          <a href="">ABOUT</a>
+          <a href="" className="hover:underline">
+            OUTLET
+          </a>
+          <a href="" className="hover:underline">
+            ABOUT
+          </a>
         </div>
         <div className="lg:absolute shrink-0 right-0 z-30 flex items-center lg:right-6 min-[1540px]:right-0">
           <a href="" className=" mr-8 md:mr-12">

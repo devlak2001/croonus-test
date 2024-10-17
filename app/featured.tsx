@@ -54,7 +54,10 @@ export default function Featured() {
         <div className="flex flex-col mb-8 md:mb-0 items-center md:items-start md:mr-20 shrink-0 md:ml-9">
           <h2 className="text-[42px] font-bold">NEW IN</h2>
           <p className="font-medium text-xl">Explore new collection</p>
-          <a href="" className="border-2 border-black text-sm px-3 py-2 mt-5">
+          <a
+            href=""
+            className="border-2 border-black text-sm px-3 py-2 mt-5 transition-colors hover:bg-black hover:text-white"
+          >
             <span className="mt-0.5 block">SEE ALL PRODUCTS</span>
           </a>
         </div>

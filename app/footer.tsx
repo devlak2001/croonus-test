@@ -34,16 +34,22 @@ export default function Footer() {
           <div className="relative w-full h-f max-w-[400px] lg:max-w-[360px] xl:max-w-[530px] shrink-0">
             <Image src={logoTransparent} alt="Logo" className="w-full" />
             <div className="flex items-end w-full h-full justify-end absolute right-0 pr-[4%] top-0 gap-[5%]">
-              <a href="" className="w-[9.1%] flex items-center justify-center">
+              <a
+                href=""
+                className="w-[9.1%] flex items-center justify-center transition-transform hover:scale-110"
+              >
                 <Image src={instagramIcon} alt="Instagram Logo" className="" />
               </a>
               <a
                 href=""
-                className="w-[9.1%] flex items-center justify-center h-[27%] rounded-lg border-black border-4"
+                className="w-[9.1%] flex items-center justify-center h-[27%] rounded-lg border-black border-4 transition-transform hover:scale-110"
               >
                 <Image src={youtubeIcon} alt="Youtube Logo" className="w-5/6" />
               </a>
-              <a href="" className="w-[9.1%] flex items-center justify-center">
+              <a
+                href=""
+                className="w-[9.1%] flex items-center justify-center transition-transform hover:scale-110"
+              >
                 <Image src={facebookIcon} alt="Facebook Logo" className="" />
               </a>
             </div>
@@ -51,33 +57,67 @@ export default function Footer() {
           <div className="flex text-center sm:text-left items-center sm:items-start gap-10 flex-col sm:flex-row justify-around w-full lg:pl-12 xl:pl-16 mt-12">
             <div className="flex flex-col text-[22px] items-center sm:items-start">
               <span className="font-medium mb-5">CONTACT</span>
-              <a href="">Customer Care</a>
-              <a href="">WhatsApp**</a>
-              <a href="">Email us</a>
-              <a href="">Store Locator</a>
+              <a href="" className="hover:underline">
+                Customer Care
+              </a>
+              <a href="" className="hover:underline">
+                WhatsApp**
+              </a>
+              <a href="" className="hover:underline">
+                Email us
+              </a>
+              <a href="" className="hover:underline">
+                Store Locator
+              </a>
             </div>
             <div className="flex flex-col text-[22px] items-center sm:items-start">
               <span className="font-medium mb-5">SERVICES</span>
-              <a href="">Express Delivery</a>
-              <a href="">How to Return</a>
-              <a href="">Return Label</a>
+              <a href="" className="hover:underline">
+                Express Delivery
+              </a>
+              <a href="" className="hover:underline">
+                How to Return
+              </a>
+              <a href="" className="hover:underline">
+                Return Label
+              </a>
             </div>
             <div className="flex flex-col text-[22px] items-center sm:items-start">
               <span className="font-medium mb-5">OUR COMPANY</span>
-              <a href="">Careers</a>
-              <a href="">Investor Relations</a>
-              <a href="">Sustainabilty</a>
-              <a href="">Press</a>
+              <a href="" className="hover:underline">
+                Careers
+              </a>
+              <a href="" className="hover:underline">
+                Investor Relations
+              </a>
+              <a href="" className="hover:underline">
+                Sustainabilty
+              </a>
+              <a href="" className="hover:underline">
+                Press
+              </a>
             </div>
           </div>
         </div>
         <div className="w-full border-gray-200 border-t-2 border-b-2 py-3 flex justify-center flex-wrap gap-y-3 gap-x-16 px-6">
-          <a href="">FAQ</a>
-          <a href="">HELP & CONTACT</a>
-          <a href="">PRIVACY STATEMENT</a>
-          <a href="">TERMS & CONDITIONS</a>
-          <a href="">TERMS OF USE</a>
-          <a href="">COOKIE SETTINGS</a>
+          <a href="" className="hover:underline">
+            FAQ
+          </a>
+          <a href="" className="hover:underline">
+            HELP & CONTACT
+          </a>
+          <a href="" className="hover:underline">
+            PRIVACY STATEMENT
+          </a>
+          <a href="" className="hover:underline">
+            TERMS & CONDITIONS
+          </a>
+          <a href="" className="hover:underline">
+            TERMS OF USE
+          </a>
+          <a href="" className="hover:underline">
+            COOKIE SETTINGS
+          </a>
         </div>
         <div className="flex flex-wrap gap-9 px-6 py-5 justify-center">
           {bankIcons.map((icon, key) => (
